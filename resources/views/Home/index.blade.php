@@ -1,10 +1,52 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gadjo</title>
-</head>
-<body>
-    <h1>    user home    </h1>
-</body>
+    <head>
+        @include('home.head')
+    </head>
+	
+	<body>
+		<!-- HEADER -->
+		<header>
+			@include('home.header')
+		</header>
+		<!-- /HEADER -->
+
+		<!-- NAVIGATION -->
+		<nav id="navigation">
+			@include('home.nav')
+		</nav>
+		<!-- /NAVIGATION -->
+
+		<!--COLLECTION SECTION -->
+		
+		<!-- /SECTION -->
+            @include('home.collectionSection')
+
+		<!--NEW PRODUCTS SECTION -->
+		@include('home.newCollection')
+		<!-- /SECTION -->
+
+		<!-- HOT DEAL SECTION -->
+		@include('home.hotdeal')
+		<!-- /HOT DEAL SECTION -->
+
+		<!--TOP DEALS SECTION -->
+		@include('home.topselling')
+		<!-- /SECTION -->
+
+		<!-- SECTION -->
+		
+		<!-- /SECTION -->
+
+		<!-- NEWSLETTER -->
+		@include('home.contact')
+		<!-- /NEWSLETTER -->
+
+		<!-- FOOTER -->
+		@include('home.footer')
+		<!-- /FOOTER -->
+
+		<!-- jQuery Plugins -->
+		@include('home.js')
+	</body>
 </html>

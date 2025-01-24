@@ -23,4 +23,4 @@ require __DIR__.'/auth.php';
 
 
 // Admin 
-Route::get('admin/dashboard', [AdminController::class, 'index']);
+Route::get('admin/dashboard', [AdminController::class, 'index'])->middleware('admin');
